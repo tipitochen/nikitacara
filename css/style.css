@@ -18,21 +18,21 @@ body {
 /* Ojos estilo anime */
 .eye {
     position: absolute;
-    top: 35%;
-    width: 120px;
-    height: 180px;
+    top: 25%;
+    width: 250px;
+    height: 350px;
     background-color: #fff; /* Blanco para el ojo */
-    border: 3px solid #000;
+    border: 0px solid #000;
     border-radius: 50%;
     overflow: hidden;
 }
 
 .eye.left {
-    left: 40%;
+    left: 35%;
 }
 
 .eye.right {
-    right: 40%; 
+    right: 35%; 
 }
 
 /* Pupila estilo anime */
@@ -43,7 +43,7 @@ body {
     transform: translateX(-40%);
     width: 100px;
     height: 100px;
-    background-color: #000; /* Negro para la pupila */
+    background-color: #2a3803; /* Negro para la pupila */
     border-radius: 50%;
     box-shadow: 0 0 10px #000;
     animation: pupil-move 5s infinite alternate;

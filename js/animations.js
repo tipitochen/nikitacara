@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Animación de apertura y cierre de boca
     setInterval(() => {
         if (mouthState) {
-            mouth.style.height = '90px';
+            mouth.style.height = '20px';
         } else {
-            mouth.style.height = '60px';
+            mouth.style.height = '10px';
         }
         mouthState = !mouthState;
     }, 1500);

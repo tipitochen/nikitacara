@@ -1,0 +1,85 @@
+/* Fondo amarillo de pantalla completa */
+body {
+    margin: 0;
+    background-color: #FFCC4D; /* Fondo amarillo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.anime-face {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Ojos estilo anime */
+.eye {
+    position: absolute;
+    top: 35%;
+    width: 120px;
+    height: 180px;
+    background-color: #fff; /* Blanco para el ojo */
+    border: 3px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.eye.left {
+    left: 40%;
+}
+
+.eye.right {
+    right: 40%; 
+}
+
+/* Pupila estilo anime */
+.pupil {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-40%);
+    width: 100px;
+    height: 100px;
+    background-color: #000; /* Negro para la pupila */
+    border-radius: 50%;
+    box-shadow: 0 0 10px #000;
+    animation: pupil-move 5s infinite alternate;
+}
+
+@keyframes pupil-move {
+    0% {
+        bottom: 20%;
+        left: 40%;
+    }
+    100% {
+        bottom: 10%;
+        left: 60%;
+    }
+}
+
+/* Boca */
+.mouth {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 100px;
+    border: 50px solid #000;
+    border-top: none;
+    border-radius: 0 0 100px 100px;
+    background-color: transparent;
+    animation: mouth-move 4s infinite alternate;
+}
+
+@keyframes mouth-move {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 40px;
+    }
+}
